@@ -12,12 +12,7 @@ def parse_text(url):
     ingredients = search_ingredients.get_text()
     instructions = search_instructions.get_text()
     return {
-                "data" : {
-                    "type": "Recipe", 
-                    "attributes": {
-                        "title": title,
-                        "ingredients": ingredients,
-                        "instructions": instructions                    
-                        }
-                    }
+            "title": title,
+            "ingredients": ingredients,
+            "instructions": instructions
             }
