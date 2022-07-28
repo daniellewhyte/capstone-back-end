@@ -20,6 +20,7 @@ from parselyBackEnd import views
 
 router = routers.DefaultRouter()
 router.register(r'recipes',views.RecipeViewSet)
+router.register(r'titles', views.TitleViewSet)
 
 urlpatterns = [
     path('admin/', admin.site.urls),
