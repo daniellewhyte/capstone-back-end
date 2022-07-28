@@ -10,3 +10,10 @@ class RecipeSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = Recipe
         fields = ["url", "title", "ingredients", "instructions"]
+
+class TitleSerializer(serializers.HyperlinkedModelSerializer):
+    title = serializers.ReadOnlyField()
+
+    class Meta:
+        model = Recipe
+        fields = ["url", "title"]
