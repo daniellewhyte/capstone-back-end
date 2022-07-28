@@ -1,5 +1,5 @@
-from bs4 import BeautifulSoup
 import requests
+from bs4 import  BeautifulSoup
 
 TEST_URL = "https://sallysbakingaddiction.com/mini-powdered-sugar-donut-muffins/"
 
