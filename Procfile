@@ -1,2 +1,1 @@
-web: gunicorn parsely.wgsi --log-file - --log-level debug
-python manage.py migrate
+web: gunicorn parsely.wsgi
