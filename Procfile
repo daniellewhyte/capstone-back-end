@@ -1,1 +1,1 @@
-web: gunicorn parsely.parsely.wgsi
+web: gunicorn parsely.wgsi
