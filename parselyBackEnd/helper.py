@@ -11,8 +11,11 @@ def parse_text(url):
     search_instructions = soup.find(class_="tasty-recipes-instructions")
     ingredients = search_ingredients.get_text()
     instructions = search_instructions.get_text()
-    return {
+    recipe = {
             "title": title,
             "ingredients": ingredients,
             "instructions": instructions
             }
+    return recipe
+
+parse_text(TEST_URL)

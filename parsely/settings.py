@@ -28,7 +28,7 @@ SECRET_KEY = 'django-insecure-i%m20ds2cets#2geldn2ng_!&&f%qzfsuhluj8&h1qvpx327i0
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['parsely-backend.herokuapp.com']
+ALLOWED_HOSTS = ['parsely-backend.herokuapp.com', 'localhost']
 
 
 # Application definition
@@ -81,6 +81,8 @@ WSGI_APPLICATION = 'parsely.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/4.0/ref/settings/#databases
+
+DATABASE_URL= 'postgres://iuatjyujhazmui:ed773967cf693e7f035ad21cdd6a19b1d6e4116b0b99da96bfd545e7ddefcea9@ec2-54-152-28-9.compute-1.amazonaws.com:5432/d4i7ciehro7a4s'
 
 DATABASES = {
     'default': dj_database_url.config(default=config('DATABASE_URL')),
@@ -168,6 +170,6 @@ REST_FRAMEWORK = {
 }
 
 CORS_ALLOWED_ORIGINS = [
-    'http://localhost:3000/',
+    'http://localhost:3000',
     'chrome-extension://hpofgdemiocplnioceoeabeijklhmama',
 ]
