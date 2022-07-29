@@ -34,6 +34,7 @@ ALLOWED_HOSTS = ['parsely-backend.herokuapp.com']
 # Application definition
 
 INSTALLED_APPS = [
+    'corsheaders',
     'psycopg2',
     'django.contrib.admin',
     'django.contrib.auth',
@@ -47,6 +48,7 @@ INSTALLED_APPS = [
 ]
 
 MIDDLEWARE = [
+    'corsheaders.middleware.CorsMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
@@ -164,3 +166,8 @@ REST_FRAMEWORK = {
     ),
     'TEST_REQUEST_DEFAULT_FORMAT': 'vnd.api+json'
 }
+
+CORS_ALLOWED_ORIGINS = [
+    'http://localhost:3000/',
+    'chrome-extension://hpofgdemiocplnioceoeabeijklhmama',
+]
