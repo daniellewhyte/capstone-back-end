@@ -28,7 +28,7 @@ SECRET_KEY = 'django-insecure-i%m20ds2cets#2geldn2ng_!&&f%qzfsuhluj8&h1qvpx327i0
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['parsely-backend.herokuapp.com']
 
 
 # Application definition
