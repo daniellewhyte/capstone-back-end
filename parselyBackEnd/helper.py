@@ -17,5 +17,3 @@ def parse_text(url):
             "instructions": instructions
             }
     return recipe
-
-parse_text(TEST_URL)
